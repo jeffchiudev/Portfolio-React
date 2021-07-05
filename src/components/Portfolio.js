@@ -1,8 +1,14 @@
 import React from 'react';
+import PortfolioItem from './PortfolioItem';
 
 function Portfolio() {
-  return(
-    <h1>Portfolio section</h1>
+  return ( 
+    <React.Fragment>
+      <h1>Portfolio section</h1>
+      <PortfolioItem
+        name="Test Portfolio Piece"/>
+    </React.Fragment>
+    
   );
 }
 
