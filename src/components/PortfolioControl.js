@@ -11,16 +11,26 @@ class PortfolioControl extends React.Component {
     };
   }
 
+  handleClick = () => {
+    this.setState(prevState => ({
+      visibleOnPage: !prevState.visibleOnPage
+    }));
+  }
+
   render() {
     let currentlyVisibleState = null;
+    let buttonText = null;
     if (this.state.visibleOnPage) {
       currentlyVisibleState = <PortfolioItemDetails/>
+      buttonText = "Return to Portfolio";
     } else {
       currentlyVisibleState = <Portfolio/>
+      buttonText = "View portfolio item"
     }
     return (
       <React.Fragment>
         {currentlyVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     );
   }
