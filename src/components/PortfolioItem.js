@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function PortfolioItem(props) {
   return (
@@ -7,5 +8,9 @@ function PortfolioItem(props) {
     </React.Fragment>
   );
 }
+
+PortfolioItem.propTypes = {
+  name: PropTypes.string,
+};
 
 export default PortfolioItem;
