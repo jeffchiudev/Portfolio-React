@@ -1,7 +1,7 @@
 import React from "react";
 import Header from './Header';
 import AboutMe from './AboutMe';
-import Portfolio from './Portfolio';
+import PortfolioControl from './PortfolioControl';
 import Contact from './Contact';
 import Intro from './Intro';
 
@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Intro/>
       <AboutMe/>
-      <Portfolio/>
+      <PortfolioControl/>
       <Contact/>
     </React.Fragment>
   );
