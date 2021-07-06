@@ -1,13 +1,19 @@
 import React from 'react';
-import {Jumbotron} from 'react-bootstrap';
 
 function Header() {
   return(
     <React.Fragment>
-      <Jumbotron>
-        <h1> Welcome to Jeff's Profile Page</h1>
-        <p>This is a test jumbotron message</p> 
-      </Jumbotron>
+      <nav  style={{paddingLeft: '100px'}} className="navbar navbar-expand-lg bg-secondary navbar-light custom-navbar">
+        <h1 className="navbar-brand nav-title">Jeff's Place</h1>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <h3>Home</h3>
+          </li>
+          <li className="nav-item">
+            <h3>Portfolio</h3>
+          </li>
+        </ul>
+      </nav>
     </React.Fragment>
   );
 }
