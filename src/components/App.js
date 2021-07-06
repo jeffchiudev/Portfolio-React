@@ -1,9 +1,10 @@
 import React from "react";
 import Header from './Header';
 import AboutMe from './AboutMe';
-import PortfolioControl from './PortfolioControl';
+import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Intro from './Intro';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Header/>
       <Intro/>
       <AboutMe/>
-      <PortfolioControl/>
+      <Portfolio/>
       <Contact/>
     </React.Fragment>
   );
