@@ -3,13 +3,16 @@ import PortfolioItem from './PortfolioItem';
 
 const testPortfolioItems = [
   {
-    name: "Bartender's Guide To The Galaxy"
+    name: "Bartender's Guide To The Galaxy",
+    link: "https://github.com/jeffchiudev/bartenders-guide-to-the-galaxy"
   },
   {
-    name: "S.N.I.F.F: All's Fur in Love & War"
+    name: "S.N.I.F.F: All's Fur in Love & War",
+    link: "https://github.com/jeffchiudev/PuppyLove.Solution"
   },
   {
-    name: "Oubliette's & Dragonnes"
+    name: "Oubliette's & Dragonnes",
+    link: "https://github.com/jeffchiudev/capstone-project"
   },
 
 ]
@@ -21,6 +24,7 @@ function Portfolio() {
       {testPortfolioItems.map((item, index) => 
         <PortfolioItem
           name={item.name}
+          link={item.link}
           key={index}/>
       )}
     </React.Fragment>
